@@ -1,0 +1,18 @@
+language: "ruby"
+sudo: false
+rvm:
+  - "1.9"
+  - "2.0"
+  - "2.1.10"
+  - "2.2.5"
+  - "2.3.1"
+  - "ruby-head"
+matrix:
+  allow_failures:
+    - rvm: "ruby-head"
+before_install:
+  - "gem update bundler"
+  - "bin/setup"
+notifications:
+  email:
+    - ogataken@gmail.com
