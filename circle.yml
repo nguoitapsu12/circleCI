@@ -5,9 +5,9 @@ ine:
  
   environment:
     CIRCLE_ENV: test
-test:
-  post:
-    - bundle exec rubocop
+# test:
+#   post:
+    # - bundle exec rubocop
 # deployment:
 #   staging:
 #     branch: develop
